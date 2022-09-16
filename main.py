@@ -21,7 +21,7 @@ def select_lead():
 
 def send_lead(p_trans_id, p_click_id, p_status_id):
 
-    url = f"https://rdr.salesdoubler.com.ua/in/postback/{p_status_id}/{p_click_id}?trans_id={p_trans_id}&token=ZmlueC5jb20udWFAc2FsZXNkb3VibGVyLmNvbS51YQ"
+    url = f"https://rdr.salesdoubler.com.ua/in/postback/{p_status_id}/{p_click_id}?trans_id={p_trans_id}&token={TOKEN}"
     #param = f"trans_id={p_trans_id}&token=ZmlueC5jb20udWFAc2FsZXNkb3VibGVyLmNvbS51YQ"
     param = {"trans_id": p_trans_id,
              "token": "ZmlueC5jb20udWFAc2FsZXNkb3VibGVyLmNvbS51YQ"}
